@@ -12,4 +12,5 @@ const ItemSchema = new mongoose.Schema({
 
 });
 
-module.exports = Item = mongoose.model('item', ItemSchema);
+// totally preference here, but i like to make the 'name' of the model capitalized.
+module.exports = Item = mongoose.model('Item', ItemSchema);

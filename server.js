@@ -55,7 +55,6 @@ app.put('/', async (req, res) => {
         return res.json({doc})
       })
     }
-    return res.json({ msg: "Item updated" });
   })
   
 });

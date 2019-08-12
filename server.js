@@ -36,7 +36,7 @@ app.delete('/', async (req, res) => {
 
 // Get all items
 app.get('/', async (req, res) => {
-  await Item.find()
+  Item.find()
     .then(item => {return res.json(item)})
     .catch(err => {res.status(400).json({err})})
 });
@@ -56,7 +56,6 @@ app.put('/', async (req, res) => {
       })
     }
   })
-  
 });
 
 // Post a new item
